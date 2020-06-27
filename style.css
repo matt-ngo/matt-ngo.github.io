@@ -1,3 +1,76 @@
-h1 {
-    font-family: 'itc_grouchregular';
+body{
+    background-color: rgb(239, 235, 230) ;
+    margin-left: 60px;
+    margin-right: 60px;
 }
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    padding: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 150px;
+    text-align: center;
+    border: black 5px solid;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: center;
+    list-style: inside;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    background-color: rgb(246, 181, 182);
+}
+
+td{
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 30%;
+    height: 30%;
+    display: block;
+}
+
+
+p{
+    margin-top: 7%;
+    line-height: 150%;
+    text-indent: 5%;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited{
+    color: black;
+}
+
+/* font-family: 'Crimson Pro', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
