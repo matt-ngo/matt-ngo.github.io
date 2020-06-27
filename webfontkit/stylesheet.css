@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'akkuratregular';
-    src: url('https://matt-ngo.github.io/webfontkit/akkurat-webfont.woff2') format('woff2'),
-         url('https://matt-ngo.github.io/webfontkit/akkurat-webfont.woff') format('woff');
+    src: url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/webfontkit/akkurat-webfont.woff2') format('woff2'),
+         url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/akkurat-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'romana_becker_demiregular';
-    src: url('https://matt-ngo.github.io/webfontkit/romana_becker_demi_regular-webfont.woff2') format('woff2'),
-         url('https://matt-ngo.github.io/webfontkit/romana_becker_demi_regular-webfont.woff') format('woff');
+    src: url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/romana_becker_demi_regular-webfont.woff2') format('woff2'),
+         url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/romana_becker_demi_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'itc_grouchregular';
-    src: url('https://matt-ngo.github.io/webfontkit/itc_grouch-webfont.woff2') format('woff2'),
-         url('https://matt-ngo.github.io/webfontkit/itc_grouch-webfont.woff') format('woff');
+    src: url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/itc_grouch-webfont.woff2') format('woff2'),
+         url('https://github.com/matt-ngo/matt-ngo.github.io/blob/master/itc_grouch-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
