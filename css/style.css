@@ -4,13 +4,15 @@ body{
     margin-left: 60px;
     margin-right: 60px;
     font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
     color: rgb(49, 46, 46);
 }
 
 h1{
     padding: 10px;
     font-family: 'DM Serif Display', serif;
-    font-size: 150px;
+    font-size: 820%;
+    /* 150px */
     text-align: center;
     border: rgb(49, 46, 46) 5px solid;
     margin-bottom: 20px;
@@ -50,6 +52,7 @@ table{
     /* background-color: rgb(246, 181, 182); */
     /* merges all table cells borders */
     border-collapse: collapse;
+    table-layout:fixed
 }
 
 td{
