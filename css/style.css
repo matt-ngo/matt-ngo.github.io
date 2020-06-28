@@ -104,3 +104,30 @@ p{
 font-family: 'DM Serif Display', serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto Mono', monospace; */
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1{
+        font-size: 400%;
+    }
+
+    table{
+        width: 100%;
+       
+    }
+
+    td{
+        font-size: small;
+        padding: 10px;   
+     }
+
+    p{
+        font-size: small;
+    }
+}
