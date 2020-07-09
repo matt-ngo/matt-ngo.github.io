@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(249, 249, 243) ; 
+    /* rgb(239, 235, 230) */
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: rgb(49, 46, 46);
+}
+
+h1{
+    padding: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 820%;
+    /* 150px */
+    text-align: center;
+    border: rgb(49, 46, 46) 5px solid;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: center;
+    list-style: inside;
+    font-weight: bold;
+}
+
+/* makes entire table cell hyperlink */
+.table a
+{
+    display:block;
+    text-decoration:none;
+}
+
+/* remove default underline from link */
+a:link {
+    text-decoration: none;
+    color: rgb(49, 46, 46);
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: rgb(49, 46, 46);
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+table{
+    width: 100%;
+    /* background-color: rgb(246, 181, 182); */
+    /* merges all table cells borders */
+    border-collapse: collapse;
+    table-layout:fixed
+}
+
+td{
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    background-color: rgb(246, 181, 182);
+    border: rgb(246, 181, 182) 5px solid;
+}
+
+td:hover{
+    background-color: rgb(49, 46, 46);
+    border: rgb(49, 46, 46) 5px solid;
+    color: rgb(249, 249, 243);
+}
+
+/* text changes color when table cell is hovered over */
+td:hover a{
+    color: rgb(249, 249, 243);
+}
+
+.myface{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 30%;
+    height: 30%;
+    display: block;
+}
+
+.cv{
+    width: 100%;
+    border: 5px rgb(49, 46, 46) solid;
+    
+}
+
+
+p{
+    margin-top: 7%;
+    line-height: 150%;
+    text-indent: 5%;
+}
+
+/* font-family: 'Crimson Pro', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1{
+        font-size: 400%;
+    }
+
+    table{
+        width: 100%;
+       
+    }
+
+    td{
+        font-size: small;
+        padding: 10px;   
+     }
+
+    p{
+        font-size: small;
+    }
+}

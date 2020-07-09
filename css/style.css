@@ -1,133 +1,48 @@
 body{
-    background-color: rgb(249, 249, 243) ; 
-    /* rgb(239, 235, 230) */
-    margin-left: 60px;
-    margin-right: 60px;
+    background: rgb(249, 249, 243); 
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
     color: rgb(49, 46, 46);
+    /* margin-top: 85px; */
 }
 
-h1{
-    padding: 10px;
+#mainNavbar .navbar-brand{
+    /* color: #ea1c2c; */
+    font-size: 2.5rem;
     font-family: 'DM Serif Display', serif;
-    font-size: 820%;
-    /* 150px */
-    text-align: center;
-    border: rgb(49, 46, 46) 5px solid;
-    margin-bottom: 20px;
 }
 
-ul {
-    text-align: center;
-    list-style: inside;
-    font-weight: bold;
-}
-
-/* makes entire table cell hyperlink */
-.table a
-{
-    display:block;
-    text-decoration:none;
-}
-
-/* remove default underline from link */
-a:link {
-    text-decoration: none;
-    color: rgb(49, 46, 46);
-}
-
-
-a:visited {
-    text-decoration: none;
-    color: rgb(49, 46, 46);
-}
-  
-a:hover {
+#navLinks a:hover{
     text-decoration: underline;
+    /* background: rgb(246, 181, 182); */
+    background:rgb(246, 181, 182);
+    color: rgb(49, 46, 46);
 }
 
-table{
-    width: 100%;
-    /* background-color: rgb(246, 181, 182); */
-    /* merges all table cells borders */
-    border-collapse: collapse;
-    table-layout:fixed
+.section1{ /*#headingGroup*/
+    background: url(imgs/goldenwoods.jpg) center center / cover no-repeat;
+    padding-top: 30%;
+    /* background: url("img/goldenwoods.jpg")  */
+    color: white;
 }
 
-td{
-    font-size: 130%;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
-    background-color: rgb(246, 181, 182);
-    border: rgb(246, 181, 182) 5px solid;
+.display-1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem; 
 }
 
-td:hover{
-    background-color: rgb(49, 46, 46);
-    border: rgb(49, 46, 46) 5px solid;
-    color: rgb(249, 249, 243);
+.header{
+    font-family: 'DM Serif Display', serif
 }
-
-/* text changes color when table cell is hovered over */
-td:hover a{
-    color: rgb(249, 249, 243);
-}
-
-.myface{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 30%;
-    height: 30%;
-    display: block;
-}
-
-.cv{
-    width: 100%;
-    border: 5px rgb(49, 46, 46) solid;
-    
-}
-
 
 p{
     margin-top: 7%;
+    margin-left: 60px;
+    margin-right: 60px;
     line-height: 150%;
     text-indent: 5%;
 }
 
-/* font-family: 'Crimson Pro', serif;
-font-family: 'DM Serif Display', serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Roboto Mono', monospace; */
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    body{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    h1{
-        font-size: 400%;
-    }
-
-    table{
-        width: 100%;
-       
-    }
-
-    td{
-        font-size: small;
-        padding: 10px;   
-     }
-
-    p{
-        font-size: small;
-    }
+.navbar.scrolled{
+    background: rgba(49, 46, 46, 0.842);
+    transition: background 500ms;
 }

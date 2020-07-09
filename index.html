@@ -5,8 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Ngo</title>
+
+
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- Tab Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -14,29 +30,66 @@
 </head>
 
 <body>
-    <div class="header">
+    <!-- <div class="header container">
         <h1>Matt Ngo.</h1>
+    </div> -->
 
+    <!-- Navbar -->
+    <div class="container">
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 px-2 fixed-top">
+            <!-- define collapse behavior -->
+            <!-- make data-target the list of links of class collapse -->
+            <!-- button before brand makes toggler collapse into right side -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- BRAND -->
+            <a class="navbar-brand mb-0 h1 pl-2 py-2" href="#">
+                <img src="img/myLogo.png" width="50" height="50" alt="" loading="lazy">
+                <!-- Matt Ngo. -->
+
+            </a>
+            <!-- LINKS -->
+            <!-- 
+                eventually have a work/about/contact
+                when you learn how to link to other pages
+             -->
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 py-2">
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/matthew-ngo-01a298160/"
+                            class="nav-link active"> LINKEDIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/matt-ngo" class="nav-link active"> GITHUB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.behance.net/MattNgo" class="nav-link active">
+                            BEHANCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="MattNgoResume.pdf" class="nav-link active"> RESUME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <table class="table">
-        <td><a href="https://www.linkedin.com/in/matthew-ngo-01a298160/">Linkedin</a></td>
-        <td><a href="https://github.com/matt-ngo">Github</a></td>
-        <td><a href="https://www.behance.net/MattNgo">Behance</a></td>
-        <td><a href="MattNgoResume.pdf">Resume</a></td>
-    </table>
-    <!-- <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/matthew-ngo-01a298160/">Linkedin</a>
-        </li>
-        <li>
-            <a href="https://github.com/matt-ngo">Github</a>
-        </li>
-        <li>
-            <a href="https://www.behance.net/MattNgo">Behance</a>
-        </li>
-    </ul> -->
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content section1">
+            <div id="headingGroup" class="text-left text-white d-none d-md-block py-5 pl-5">
+                <h1 class="display-1">Matt Ngo</h1>
+                <h5 class="lead">Programmer / Designer</p>
+            </div>
 
+            <div id="headingGroup" class="text-center text-white d-block d-md-none py-3 pl-5">
+                <h1 class="display-1">Matt Ngo</h1>
+            </div>
+        </div>
+
+
+    </section>
 
     <p>This is a test! Lorem ipsum something something something...</p>
 
@@ -86,8 +139,22 @@
 
     </p>
 
-    <img class="myface" src="img/mylogo.png" alt="Pictures/minimal3png.png">
 
+    <!-- <img class="myface" src="img/mylogo.png" alt="Pictures/minimal3png.png"> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- scroll detector -->
+    <script>
+        $(function () {
+            // when there is a scroll event
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
 </body>
 
