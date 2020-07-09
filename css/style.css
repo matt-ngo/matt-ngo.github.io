@@ -5,6 +5,8 @@ body{
     /* margin-top: 85px; */
 }
 
+/* NAVBAR STUFF */
+
 #mainNavbar .navbar-brand{
     /* color: #ea1c2c; */
     font-size: 2.5rem;
@@ -17,6 +19,14 @@ body{
     background:rgb(246, 181, 182);
     color: rgb(49, 46, 46);
 }
+
+.navbar-dark > .navbar-collapse {
+    background: rgb(246, 181, 182);
+    text-align: center;
+    margin-left: 0;
+}
+
+/*  */
 
 .section1{ /*#headingGroup*/
     background: url(imgs/goldenwoods.jpg) center center / cover no-repeat;
@@ -45,4 +55,7 @@ p{
 .navbar.scrolled{
     background: rgba(49, 46, 46, 0.842);
     transition: background 500ms;
+}
+.navbar.scrolled > .navbar-collapse{
+    background: rgba(49, 46, 46, 0);
 }
