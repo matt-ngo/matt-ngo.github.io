@@ -1,5 +1,5 @@
-body{
-    background: rgb(249, 249, 243); 
+body {
+    background: rgb(249, 249, 243);
     font-family: 'Roboto Mono', monospace;
     color: rgb(49, 46, 46);
     /* margin-top: 85px; */
@@ -7,44 +7,39 @@ body{
 
 /* NAVBAR STUFF */
 
-#mainNavbar .navbar-brand{
+#mainNavbar .navbar-brand {
     /* color: #ea1c2c; */
     font-size: 2.5rem;
     font-family: 'DM Serif Display', serif;
 }
 
-#navLinks a:hover{
+#navLinks a:hover {
     text-decoration: underline;
     /* background: rgb(246, 181, 182); */
-    background:rgb(246, 181, 182);
+    background: rgb(246, 181, 182);
     color: rgb(49, 46, 46);
 }
 
-.navbar-dark > .navbar-collapse {
-    background: rgb(246, 181, 182);
-    text-align: center;
-    margin-left: 0;
-}
+/* MAIN BODY */
 
-/*  */
-
-.section1{ /*#headingGroup*/
+.section1 {
+    /*#headingGroup*/
     background: url(imgs/goldenwoods.jpg) center center / cover no-repeat;
     padding-top: 30%;
     /* background: url("img/goldenwoods.jpg")  */
     color: white;
 }
 
-.display-1{
+.display-1 {
     font-family: 'DM Serif Display', serif;
-    font-size: 5rem; 
+    font-size: 5rem;
 }
 
-.header{
+.header {
     font-family: 'DM Serif Display', serif
 }
 
-p{
+p {
     margin-top: 7%;
     margin-left: 60px;
     margin-right: 60px;
@@ -52,10 +47,22 @@ p{
     text-indent: 5%;
 }
 
-.navbar.scrolled{
+/* SCROLL NAVBAR BEHAVIOR */
+
+.navbar.scrolled {
     background: rgba(49, 46, 46, 0.842);
     transition: background 500ms;
 }
-.navbar.scrolled > .navbar-collapse{
-    background: rgba(49, 46, 46, 0);
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .navbar.scrolled>.navbar-collapse {
+        background: rgba(49, 46, 46, 0);
+    }
+    .navbar-dark>.navbar-collapse {
+        background: rgb(246, 181, 182);
+        text-align: center;
+        /* transition: background 500ms; */
+    }
 }
