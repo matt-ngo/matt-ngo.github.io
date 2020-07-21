@@ -5,6 +5,11 @@ body {
     /* margin-top: 85px; */
 }
 
+.text {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 /* NAVBAR STUFF */
 
 #mainNavbar .navbar-brand {
@@ -14,10 +19,12 @@ body {
 }
 
 #navLinks a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
+    /* underline */
     /* background: rgb(246, 181, 182); */
     background: rgb(246, 181, 182);
     color: rgb(49, 46, 46);
+    transition: 500ms;
 }
 
 /* MAIN BODY */
@@ -26,7 +33,7 @@ body {
     /*#headingGroup*/
     background: url(imgs/goldenwoods.jpg) center center / cover no-repeat;
     padding-top: 30%;
-    /* background: url("img/goldenwoods.jpg")  */
+    padding-left: 5%;
     color: white;
 }
 
@@ -35,24 +42,33 @@ body {
     font-size: 5rem;
 }
 
-.header {
+/* .header {
     font-family: 'DM Serif Display', serif
-}
+} */
 
 p {
     margin-top: 7%;
-    margin-left: 60px;
-    margin-right: 60px;
     line-height: 150%;
     text-indent: 5%;
 }
 
-/* SCROLL NAVBAR BEHAVIOR */
+.projectList {
+    text-align: center;
+    list-style: inside;
+}
+
+/* SCROLL BEHAVIOR */
 
 .navbar.scrolled {
     background: rgba(49, 46, 46, 0.842);
-    transition: background 500ms;
+    transition: background 1s;
 }
+
+/* .section1.scrolled {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transition: 1s;
+} */
 
 /* MOBILE */
 
