@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PLIT</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 class="title">$PLIT</h1>
+
+
+    <!-- <p>Instructions: ...</p> -->
+
+    <div class="root">
+        <!-- Bill -->
+        <p>
+            <label for="subTotal">Total: $</label>
+            <input type="number" name="subtotal" id="subTotal" placeholder="69.00" required>
+        </p>
+
+        <p>
+            <label for="subT">Tax: $</label>
+            <input type="number" name="tax" id="tax" placeholder="4.20" required>
+        </p>
+
+        <p class="chonk">
+            <label for="subT">Tip: $</label>
+            <input type="number" name="tip" id="tip" placeholder="4.20" required>
+        </p>
+
+        <!-- Your Items -->
+        <!-- expanding list of your items -->
+        <div>
+            <h5>Your Items:</h5>
+            <ul class="itemsList"></ul>
+        </div>
+
+        <form class="chonk">
+            <input type="text" name="name" id="foodName" class="itemInput" placeholder="Sandwich">
+            <span>: $ </span>
+            <input type="number" name="price" id="foodPrice" class="itemInput itemInputPrice"
+                placeholder="10.00">
+
+            <br>
+
+            <label for="shared">Shared?</label>
+            <input type="checkbox" name="shared" value="on">
+
+            <div class="col text-right">
+                <button type="submit" class="addItemBtn conte">Add Item</button>
+            </div>
+        </form>
+
+        <!-- Calculations -->
+        <div>
+            <p>
+                You owe $<span id="yourCost">0.00</span>
+            </p>
+
+            <!-- <div>
+                <p>
+                    <span>Venmo to: </span>
+                    <input type="text" id="venmoID">
+                </p>
+               
+            </div> -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>

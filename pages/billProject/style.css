@@ -1,0 +1,57 @@
+body {
+    background: rgb(249, 249, 243);
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(49, 46, 46);
+    /* typings */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /*flexbox items ordered from top to bottom*/
+    align-items: center;
+    /*items centered on the cross axis (verticaly)*/
+    justify-content: space-between;
+    line-height: 1.6rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+}
+
+.root {
+    /*  */
+    margin-top: 1rem;
+    padding: 1.4rem 1rem;
+    border-radius: 0.4rem;
+    background: #eaeaea9d;
+}
+
+.chonk {
+    padding-bottom: 20px;
+    border-bottom: rgb(49, 46, 46) 1px solid;
+}
+
+input {
+    border: 0px;
+    background: rgba(255, 255, 255, 0.596);
+}
+
+button {
+    border-radius: 0.2rem;
+    border: 0px;
+    padding: 0.4rem 1rem;
+    font-size: 1.2 rem;
+    /* background: rgb(106, 159, 108); */
+    background: rgb(49, 46, 46);
+    color: rgb(249, 249, 243);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
