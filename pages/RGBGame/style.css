@@ -84,3 +84,20 @@ button:hover {
     display: inline-block;
     width: 30%;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    #colorDisplay {
+        font-size: 1.5rem;
+    }
+    #message {
+        display: inline-block;
+        width: 20%;
+    }
+    #stripe {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
