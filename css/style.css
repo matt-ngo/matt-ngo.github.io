@@ -5,6 +5,20 @@ body {
     /* margin-top: 85px; */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(49, 46, 46);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .text {
     margin-left: 60px;
     margin-right: 60px;
@@ -19,9 +33,9 @@ body {
 }
 
 #navLinks a:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
     /* underline */
-    /* background: rgb(246, 181, 182); */
+    /* background: rgb(85, 255, 201); */
     background: rgb(246, 181, 182);
     color: rgb(49, 46, 46);
     transition: 500ms;
@@ -35,6 +49,7 @@ body {
     padding-top: 30%;
     padding-left: 5%;
     color: white;
+    margin-bottom: 5%;
 }
 
 .display-1 {
@@ -42,19 +57,89 @@ body {
     font-size: 5rem;
 }
 
-/* .header {
-    font-family: 'DM Serif Display', serif
-} */
-
 p {
-    margin-top: 7%;
+    /* margin-top: 5%; */
     line-height: 150%;
-    text-indent: 5%;
+    /* text-indent: 5%; */
+}
+
+.blurb {
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(255, 255, 0, 0.514);
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.linkTree {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* makes entire table cell hyperlink */
+
+.linkItem {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    border: rgb(49, 46, 46) 3px solid;
+}
+
+.linkItem a {
+    /* link takes up the whole chonk */
+    display: block;
+}
+
+.linkItem:hover a {
+    text-decoration: underline;
+    color: rgb(249, 249, 243);
+}
+
+.linkItem:hover {
+    /* background-color: rgb(49, 46, 46); */
+    background-color: rgb(49, 46, 46);
+    /* boxes groww when hovered */
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .projectList {
+    margin-top: 7%;
     text-align: center;
     list-style: inside;
+    /* border: rgb(49, 46, 46) 4px solid; */
+    /* width: 50%; */
+    padding: 2%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(49, 46, 46);
+    text-align: right;
+    padding-right: 5%;
+    font-weight: bold;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 /* SCROLL BEHAVIOR */

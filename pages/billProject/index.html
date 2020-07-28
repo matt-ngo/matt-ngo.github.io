@@ -41,12 +41,12 @@
         </p>
 
         <p>
-            <label for="subT">Tax: $</label>
+            <label for="tax">Tax: $</label>
             <input type="number" name="tax" id="tax" placeholder="4.20" required>
         </p>
 
         <p class="chonk">
-            <label for="subT">Tip: $</label>
+            <label for="tip">Tip: $</label>
             <input type="number" name="tip" id="tip" placeholder="4.20" required>
         </p>
 
@@ -54,11 +54,12 @@
         <!-- expanding list of your items -->
         <div>
             <h5>Your Items:</h5>
-            <ul class="itemsList"></ul>
+            <ul id="items" class="itemsList"></ul>
         </div>
 
         <form class="chonk">
-            <input type="text" name="name" id="foodName" class="itemInput" placeholder="Sandwich">
+            <input type="text" name="name" id="foodName" class="itemInput itemInputName"
+                placeholder="Sandwich">
             <span>: $ </span>
             <input type="number" name="price" id="foodPrice" class="itemInput itemInputPrice"
                 placeholder="10.00">
@@ -69,7 +70,10 @@
             <input type="checkbox" name="shared" value="on">
 
             <div class="col text-right">
-                <button type="submit" class="addItemBtn conte">Add Item</button>
+                <button type="button" class="addItemBtn content" onclick="newElement()">Add
+                    Item</button>
+
+                <!-- type="submit" -->
             </div>
         </form>
 
@@ -90,6 +94,7 @@
     </div>
 
 
+    <script src="script.js"></script>
 </body>
 
 </html>
