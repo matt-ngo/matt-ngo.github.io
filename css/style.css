@@ -158,6 +158,12 @@ h5 {
 /* MOBILE */
 
 @media (max-width: 768px) {
+    .blurb {
+        display: none;
+    }
+    .footer p {
+        margin-bottom: 0;
+    }
     .navbar.scrolled>.navbar-collapse {
         background: rgba(49, 46, 46, 0);
     }
