@@ -167,12 +167,9 @@ h5 {
     transition: 1s;
 } */
 
-/* MOBILE */
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
-    h5 {
-        font-size: 1rem;
-    }
     .linkItem {
         padding: 10px 25px;
     }
