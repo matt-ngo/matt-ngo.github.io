@@ -45,7 +45,7 @@ a:hover {
 
 .section1 {
     /*#headingGroup*/
-    background: url(imgs/goldenwoods.jpg) center center / cover no-repeat;
+    background: url(../img/goldenwoods.jpg) center center / cover no-repeat;
     padding-top: 30%;
     padding-left: 5%;
     color: white;
@@ -79,6 +79,7 @@ h5 {
 .linkTree {
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* makes entire table cell hyperlink */
@@ -101,13 +102,14 @@ h5 {
 }
 
 .linkItem:hover a {
-    text-decoration: underline;
-    color: rgb(249, 249, 243);
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(49, 46, 46);
 }
 
 .linkItem:hover {
     /* background-color: rgb(49, 46, 46); */
-    background-color: rgb(49, 46, 46);
+    background-color: rgb(165, 204, 170);
     /* boxes groww when hovered */
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -124,13 +126,13 @@ h5 {
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     color: rgb(49, 46, 46);
     text-align: right;
-    padding-right: 5%;
+    padding: 5%;
     font-weight: bold;
     -webkit-user-select: none;
     /* Safari */
@@ -158,8 +160,23 @@ h5 {
 /* MOBILE */
 
 @media (max-width: 768px) {
+    h5 {
+        font-size: 1rem;
+    }
+    .linkItem {
+        padding: 10px 25px;
+    }
     .blurb {
-        display: none;
+        margin-top: 5%;
+        text-decoration: none;
+        background-color: rgb(49, 46, 46);
+        color: rgb(249, 249, 243);
+        padding: 8%;
+        text-align: center;
+    }
+    .footer {
+        margin-top: 30%;
+        text-align: center;
     }
     .footer p {
         margin-bottom: 0;
