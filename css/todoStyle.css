@@ -1,0 +1,113 @@
+/* 
+    css concepts
+        margin 
+        padding
+        float 
+        fonts
+
+        FontAwesome
+        Box Shadow
+        Transition
+        Gradients
+ */
+
+body {
+    font-family: 'Fira Code', monospace;
+    color: rgb(26, 26, 26);
+    height: 100%;
+    background: rgb(227, 222, 205);
+    /* UIgradients */
+    /*
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    */
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: rgb(253, 247, 248);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+h1 {
+    background-color: rgb(228, 180, 91);
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: rgb(240, 235, 217);
+    height: 40px;
+    line-height: 40px;
+    color: rgb(6, 6, 6);
+}
+
+li:nth-child(2n) {
+    background-color: rgb(253, 247, 248);
+}
+
+input {
+    font-size: 18px;
+    font-family: 'Fira Code', monospace;
+    background-color: rgb(253, 247, 248);
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: none;
+    color: rgb(6, 6, 6);
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    background: white;
+    border: 3px solid rgb(228, 180, 91);
+    outline: none;
+}
+
+.fa-edit {
+    float: right;
+}
+
+.delete {
+    background-color: tomato;
+    color: white;
+    height: 40px;
+    width: 0px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    /* animation */
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+/* appear on hover */
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+/*
+Font Awesome 5 converts the <i> element into an SVG. To work around 
+this we have to wrap the <i> element in a span and select the span 
+in our JS with an id. This also means we have to style the todo list 
+trash can spans with li span in our CSS, instead of just using span, 
+which would mess up our toggle button.
+*/
