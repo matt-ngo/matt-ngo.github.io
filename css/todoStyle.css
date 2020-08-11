@@ -15,7 +15,7 @@ body {
     font-family: 'Fira Code', monospace;
     color: rgb(26, 26, 26);
     height: 100%;
-    background: rgb(227, 222, 205);
+    background: rgb(24, 24, 24);
     /* UIgradients */
     /*
     background: #232526;  
@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-    background-color: rgb(228, 180, 91);
+    background-color: rgb(236, 195, 178);
     margin: 0;
     text-transform: uppercase;
     font-size: 24px;
@@ -52,7 +52,7 @@ ul {
 }
 
 li {
-    background: rgb(240, 235, 217);
+    background: rgb(241, 240, 234);
     height: 40px;
     line-height: 40px;
     color: rgb(6, 6, 6);
@@ -76,11 +76,11 @@ input {
 
 input:focus {
     background: white;
-    border: 3px solid rgb(228, 180, 91);
+    border: 3px solid rgb(236, 195, 178);
     outline: none;
 }
 
-.fa-edit {
+.fa-plus {
     float: right;
 }
 

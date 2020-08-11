@@ -17,7 +17,7 @@ $("ul").on("click", "li", function (event) {
 
 $("ul").on("click", "span", function (event) {
     //"event" var name is arbitratry
-    event.stopPropagation();//stops bubb;ing from reaching parents (no li interaction)
+    event.stopPropagation();//stops bubbling from reaching parents (no li interaction)
     $(this).parent().fadeOut(500, function () {
         $(this).remove();// 'this' here == this.parent
     });
@@ -39,4 +39,4 @@ $("input[type='text']").keypress(function (event) {
 
 $("#toggle").click(function () {
     $("input[type='text']").fadeToggle();
-})
+});
