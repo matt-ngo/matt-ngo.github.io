@@ -68,7 +68,7 @@ p {
 
 .blurb {
     text-transform: none;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     max-width: 550px;
     display: block;
