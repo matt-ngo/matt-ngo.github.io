@@ -65,7 +65,7 @@ function resetColors() {
     //update squares display
     squareColorInit();
 
-    h1.style.backgroundColor = "rgb(29, 32, 33)"
+    h1.style.backgroundColor = "#e6e1dc"
     messageDisplay.textContent = " ";
     refresh.textContent = "New Colors";
 }
@@ -102,7 +102,7 @@ function squareClicked() {
     }
     else {
         // wrong color = color dissapears
-        this.style.backgroundColor = "rgb(40, 40, 40)"
+        this.style.backgroundColor = "#f7f2e7"
         messageDisplay.textContent = "Try Again!";
     }
 }

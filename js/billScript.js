@@ -2,6 +2,10 @@ let total = 0;
 let tax = 0;
 let tip = 0;
 
+let myTotal = 0;
+let myTax = 0;
+let myTip = 0;
+
 let itemNames = [];
 let itemPrices = [];
 
@@ -88,6 +92,48 @@ function newElement() {
     }
 
 }
+
+let inputs = document.querySelectorAll(".itemInput");
+// let forms = document.querySelectorAll("form");
+let resultDisplay = document.querySelector("#yourCost");
+let subDisplay = document.querySelector("#yourSub");
+let taxDisplay = document.querySelector("#yourTax");
+let tipDisplay = document.querySelector("#yourTip");
+let addBtn = document.querySelector(".addItemBtn");
+addBtn.addEventListener("click", refresh);
+
+for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("change", refresh);
+}
+// for (let i = 0; i < forms.length; i++) {
+//     forms[i].addEventListener("change", refresh);
+// }
+
+
+function refresh() {
+    // get the new percentage
+    let percentage = getPercentage();
+
+    subDisplay.textContent = myTotal;
+
+    myTip = Math.round(tip * percentage * 100) / 100;
+    tipDisplay.textContent = myTip;
+
+    myTax = Math.round(tax * percentage * 100) / 100;
+    taxDisplay.textContent = myTax;
+    // console.log();
+    result = myTotal + myTip + myTax;
+    resultDisplay.textContent = result;
+}
+
+function getPercentage() {
+    let temp = 0;
+    itemPrices.forEach(function (i) {
+        temp += i;
+    })
+    myTotal = temp;
+    return temp / total;
+}
 /*
     1) total up their item cost
     2) get the ratio of their items to the total
@@ -105,3 +151,4 @@ function newElement() {
 
     input validation
 */
+
