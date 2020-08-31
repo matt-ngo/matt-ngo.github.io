@@ -1,78 +1,105 @@
+/* ---------- */
 body {
-    background: rgb(249, 249, 243);
-    color: rgb(49, 46, 46);
-    /* margin-top: 85px; */
-    /* font-family: 'Roboto Mono', monospace; */
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: lowercase;
-    font-size: 18px;
+  background: rgb(249, 249, 243);
+  color: rgb(49, 46, 46);
+  /* margin-top: 85px; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: lowercase;
+  font-size: 18px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
-    text-decoration: none;
-    color: rgb(49, 46, 46);
+  text-decoration: none;
+  color: rgb(49, 46, 46);
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .text {
-    margin-left: 60px;
-    margin-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 /* NAVBAR STUFF */
 
+.navbar-toggler-icon {
+  background-image: url(../img/mylogo.png) !important;
+  margin: 10px 0;
+  padding: 30px !important;
+  border: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link.active {
+  padding-left: 20px;
+}
+
 #mainNavbar .navbar-brand {
-    /* color: #ea1c2c; */
-    font-size: 2.5rem;
-    font-family: 'DM Serif Display', serif;
+  /* color: #ea1c2c; */
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
 }
 
 #navLinks a:hover {
-    text-decoration: none;
-    /* underline */
-    /* background: rgb(85, 255, 201); */
-    background: rgb(246, 181, 182);
-    color: rgb(49, 46, 46);
-    transition: 500ms;
+  text-decoration: underline wavy rgb(246, 181, 182);
+  /* underline */
+  /* background: rgb(85, 255, 201); */
+  /* background: rgb(246, 181, 182); */
+  /* color: rgb(49, 46, 46);  */
+  /* transition: 500ms; */
+}
+
+.inactive {
+  text-decoration: line-through red;
 }
 
 /* MAIN BODY */
 
 .section1 {
-    /*#headingGroup*/
-    background: url(../img/goldenwoods.jpg) center center / cover no-repeat;
-    padding-top: 30%;
-    padding-left: 5%;
-    color: white;
-    margin-bottom: 5%;
+  /*#headingGroup*/
+  background: url(../img/goldenwoods.jpg) center center / cover no-repeat;
+  padding-top: 10%;
+  padding-left: 5%;
+  color: white;
+  margin-bottom: 5%;
 }
 
 .display-1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 5rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 5rem;
+  padding-left: 5%;
+}
+
+.lead {
+  padding-left: 5%;
 }
 
 p {
-    /* margin-top: 5%; */
-    line-height: 1.5em;
-    /* text-indent: 5%; */
+  /* margin-top: 5%; */
+  line-height: 1.5em;
+  /* text-indent: 5%; */
 }
 
 .blurb {
-    text-transform: none;
-    text-align: left;
-    font-weight: bold;
-    max-width: 550px;
-    display: block;
-    margin: 0 auto 15px;
+  text-transform: none;
+  text-align: left;
+  font-weight: bold;
+  max-width: 660px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 /* .blurb {
@@ -83,82 +110,84 @@ p {
 } */
 
 h5 {
-    /* text-transform: uppercase; */
-    font-weight: bold;
-    font-size: 1.5rem;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
+/* LINKTREE */
+
 .linkTree {
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* makes entire table cell hyperlink */
 
 .linkItem {
-    display: block;
-    max-width: 550px;
-    margin: 0 auto 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 15px 25px;
-    text-decoration: none;
-    transition: all .25s ease-in-out;
-    border: rgb(49, 46, 46) 3px solid;
+  display: block;
+  max-width: 660px;
+  margin: 0 auto 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  border: rgb(49, 46, 46) 3px solid;
 }
 
 .linkItem a {
-    /* link takes up the whole chonk */
-    display: block;
+  /* link takes up the whole chonk */
+  display: block;
 }
 
 .linkItem:hover a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(249, 249, 243);
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(249, 249, 243);
 }
 
 .linkItem:hover {
-    background-color: rgb(49, 46, 46);
-    /* border-color: rgb(249, 249, 243); */
-    /* boxes groww when hovered */
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+  background-color: rgb(49, 46, 46);
+  /* border-color: rgb(249, 249, 243); */
+  /* boxes groww when hovered */
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projectList {
-    margin-top: 7%;
-    text-align: center;
-    list-style: inside;
-    padding: 2%;
+  margin-top: 7%;
+  text-align: center;
+  list-style: inside;
+  padding: 2%;
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: rgb(49, 46, 46);
-    text-align: right;
-    padding: 5%;
-    font-weight: bold;
-    -webkit-user-select: none;
-    /* Safari */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* IE10+/Edge */
-    user-select: none;
-    /* Standard */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(49, 46, 46);
+  text-align: right;
+  padding: 5%;
+  font-weight: bold;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
 }
 
 /* SCROLL BEHAVIOR */
 
 .navbar.scrolled {
-    background: rgba(49, 46, 46, 0.842);
-    transition: background 1s;
+  background: rgba(49, 46, 46, 0.842);
+  transition: background 1s;
 }
 
 /* .section1.scrolled {
@@ -170,31 +199,47 @@ h5 {
 /* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
-    .linkItem {
-        padding: 10px 25px;
-    }
-    .blurb {
-        margin-top: 5%;
-        text-decoration: none;
-        background-color: rgb(49, 46, 46);
-        color: rgb(249, 249, 243);
-        padding: 8%;
-        text-align: center;
-    }
-    .footer {
-        position: initial;
-        margin-top: 30%;
-        text-align: center;
-    }
-    .footer p {
-        margin-bottom: 0;
-    }
-    .navbar.scrolled>.navbar-collapse {
-        background: rgba(49, 46, 46, 0);
-    }
-    .navbar-dark>.navbar-collapse {
-        background: rgb(246, 181, 182);
-        text-align: center;
-        /* transition: background 500ms; */
-    }
+  .navbar-toggler {
+    margin: auto;
+  }
+  .navbar-toggler-icon {
+    /* margin: 2px 0; */
+    padding: 22px !important;
+  }
+
+  .nav-link.active {
+    padding-left: 0;
+  }
+
+  .section1 {
+    padding-top: 20%;
+  }
+  .display-1 {
+    padding-left: 0;
+  }
+
+  .lead {
+    padding-left: 0;
+  }
+
+  .linkItem {
+    padding: 10px 25px;
+  }
+  .blurb {
+    margin-top: 5%;
+    text-decoration: none;
+    background-color: rgb(49, 46, 46);
+    color: rgb(249, 249, 243);
+    padding: 8%;
+    text-align: center;
+  }
+
+  .navbar.scrolled > .navbar-collapse {
+    background: rgba(49, 46, 46, 0);
+  }
+  .navbar-dark > .navbar-collapse {
+    background: rgb(246, 181, 182);
+    text-align: center;
+    /* transition: background 500ms; */
+  }
 }
