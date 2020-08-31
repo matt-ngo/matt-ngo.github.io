@@ -12,12 +12,13 @@
  */
 
 body {
-    font-family: 'Fira Code', monospace;
-    color: rgb(26, 26, 26);
-    height: 100%;
-    background: rgb(24, 24, 24);
-    /* UIgradients */
-    /*
+  font-family: "Fira Code", monospace;
+  color: rgb(26, 26, 26);
+  height: 100%;
+  /* background: rgb(24, 24, 24); */
+  background: rgb(249, 249, 243);
+  /* UIgradients */
+  /*
     background: #232526;  
     background: -webkit-linear-gradient(to right, #414345, #232526);
     background: linear-gradient(to right, #414345, #232526);
@@ -25,83 +26,91 @@ body {
 }
 
 #container {
-    width: 360px;
-    margin: 100px auto;
-    background-color: rgb(253, 247, 248);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  margin: 100px auto;
+  background: rgb(249, 249, 243);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
+  border: 2px solid rgb(40, 40, 40);
 }
 
 .completed {
-    color: grey;
-    text-decoration: line-through;
+  color: grey;
+  text-decoration: line-through;
 }
 
 h1 {
-    background-color: rgb(236, 195, 178);
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: normal;
-    padding: 10px 20px;
+  /* background-color: rgb(236, 195, 178); */
+  background: rgb(249, 249, 243);
+  margin: 0;
+  /* text-transform: uppercase; */
+  font-size: 24px;
+  font-weight: normal;
+  padding: 10px 20px;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    background: rgb(241, 240, 234);
-    height: 40px;
-    line-height: 40px;
-    color: rgb(6, 6, 6);
+  /* background: rgb(241, 240, 234); */
+  background: rgb(249, 249, 243);
+  height: 40px;
+  line-height: 40px;
+  color: rgb(40, 40, 40);
+  /* border-bottom: 2px solid rgb(40, 40, 40); */
 }
 
 li:nth-child(2n) {
-    background-color: rgb(253, 247, 248);
+  /* background-color: rgb(253, 247, 248); */
+  background: rgb(238, 238, 233);
 }
 
 input {
-    font-size: 18px;
-    font-family: 'Fira Code', monospace;
-    background-color: rgb(253, 247, 248);
-    width: 100%;
-    padding: 13px 13px 13px 20px;
-    box-sizing: border-box;
-    border: none;
-    color: rgb(6, 6, 6);
-    border: 3px solid rgba(0, 0, 0, 0);
+  font-size: 18px;
+  font-family: "Fira Code", monospace;
+  /* background-color: rgb(253, 247, 248); */
+  background: rgb(249, 249, 243);
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  border: none;
+  color: rgb(6, 6, 6);
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
-    background: white;
-    border: 3px solid rgb(236, 195, 178);
-    outline: none;
+  background: white;
+  /* border: 2px solid rgba(0, 26, 255, 0.63); */
+  outline: none;
 }
 
-.fa-plus {
-    float: right;
+.fa-compress {
+  float: right;
+  font-size: 0.8em;
+  margin-top: 5px;
 }
 
 .delete {
-    background-color: tomato;
-    color: white;
-    height: 40px;
-    width: 0px;
-    display: inline-block;
-    margin-right: 20px;
-    text-align: center;
-    /* animation */
-    opacity: 0;
-    transition: 0.2s linear;
+  background-color: tomato;
+  color: white;
+  height: 40px;
+  width: 0px;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  /* animation */
+  opacity: 0;
+  transition: 0.2s linear;
 }
 
 /* appear on hover */
 
 li:hover span {
-    width: 40px;
-    opacity: 1;
+  width: 40px;
+  opacity: 1;
 }
 
 /*
