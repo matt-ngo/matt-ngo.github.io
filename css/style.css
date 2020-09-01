@@ -102,17 +102,11 @@ p {
   margin: 0 auto 15px;
 }
 
-/* .blurb {
-    text-decoration: underline;
-    text-align: center;
-    font-style: italic;
-    background-color: rgba(255, 255, 0, 0.514);
-} */
-
 h5 {
   /* text-transform: uppercase; */
   font-weight: bold;
   font-size: 1.5rem;
+  margin: 3% auto;
 }
 
 /* LINKTREE */
@@ -128,40 +122,35 @@ h5 {
 .linkItem {
   display: block;
   max-width: 660px;
-  margin: 0 auto 15px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  /* margin: 15px auto; */
   padding: 15px 25px;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  border: rgb(49, 46, 46) 3px solid;
+  border: rgb(49, 46, 46) 4px solid;
+  box-shadow: -10px -10px 0 0 rgb(49, 46, 46);
+  margin: 20px auto;
 }
 
 .linkItem a {
   /* link takes up the whole chonk */
   display: block;
+  font-size: 1.125rem;
 }
 
 .linkItem:hover a {
   text-decoration: none;
-  font-weight: bold;
-  color: rgb(249, 249, 243);
+  /* font-weight: bold; */
+  color: rgb(49, 46, 46);
 }
 
 .linkItem:hover {
-  background-color: rgb(49, 46, 46);
+  background-color: rgb(75, 205, 155);
   /* border-color: rgb(249, 249, 243); */
   /* boxes groww when hovered */
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.projectList {
-  margin-top: 7%;
-  text-align: center;
-  list-style: inside;
-  padding: 2%;
+  box-shadow: 0 0 0 0 rgb(49, 46, 46);
 }
 
 .footer {
