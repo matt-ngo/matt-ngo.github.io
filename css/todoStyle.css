@@ -94,7 +94,7 @@ input:focus {
 }
 
 .delete {
-  background-color: tomato;
+  background-color: rgb(40, 40, 40);
   color: white;
   height: 40px;
   width: 0px;
