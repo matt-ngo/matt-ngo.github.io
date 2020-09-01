@@ -9,6 +9,15 @@ body {
   font-size: 18px;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  background-color: rgb(75, 205, 155);
+}
+
+::selection {
+  background-color: rgb(75, 205, 155);
+}
+
 a {
   text-decoration: none;
   color: inherit;
