@@ -48,8 +48,8 @@ a:hover {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .nav-link.active {
@@ -71,11 +71,27 @@ a:hover {
   /* transition: 500ms; */
 }
 
-.inactive {
-  text-decoration: line-through red;
+/* MAIN BODY */
+
+.plantleft {
+  bottom: 1%;
+  left: 1%;
+  width: 25%;
+  position: fixed;
+}
+.plantright {
+  bottom: 1%;
+  right: 1.2%;
+  width: 21%;
+  position: fixed;
 }
 
-/* MAIN BODY */
+.plantcenter {
+  width: 80%;
+  display: block;
+  bottom: 1%;
+  margin: 0 auto 15px;
+}
 
 .section1 {
   /*#headingGroup*/
@@ -130,7 +146,7 @@ h5 {
 
 .linkItem {
   display: block;
-  max-width: 660px;
+  max-width: 600px;
   /* margin: 15px auto; */
   padding: 15px 25px;
   text-decoration: none;
