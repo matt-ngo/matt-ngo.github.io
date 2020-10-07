@@ -1,7 +1,12 @@
-/* ---------- */
+:root {
+  --beige: rgb(249, 249, 243);
+  --dk-gry: rgb(49, 46, 46);
+  --green: rgb(75, 205, 155);
+  --pink: rgb(246, 181, 182);
+} /* ---------- */
 body {
-  background: rgb(249, 249, 243);
-  color: rgb(49, 46, 46);
+  background: var(--beige);
+  color: var(--dk-gry);
   /* margin-top: 85px; */
   /* font-family: 'Roboto Mono', monospace; */
   font-family: "Josefin Sans", sans-serif;
@@ -11,11 +16,11 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: rgb(75, 205, 155);
+  background-color: var(--green);
 }
 
 ::selection {
-  background-color: rgb(75, 205, 155);
+  background-color: var(--green);
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 
 a:visited {
   text-decoration: none;
-  color: rgb(49, 46, 46);
+  color: var(--dk-gry);
 }
 
 a:hover {
@@ -63,11 +68,11 @@ a:hover {
 }
 
 #navLinks a:hover {
-  text-decoration: underline wavy rgb(246, 181, 182);
+  text-decoration: underline wavy var(--pink);
   /* underline */
   /* background: rgb(85, 255, 201); */
-  /* background: rgb(246, 181, 182); */
-  /* color: rgb(49, 46, 46);  */
+  /* background: var(--pink); */
+  /* color: var(--dk-gry);  */
   /* transition: 500ms; */
 }
 
@@ -151,8 +156,8 @@ h5 {
   padding: 15px 25px;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  border: rgb(49, 46, 46) 4px solid;
-  box-shadow: -10px -10px 0 0 rgb(49, 46, 46);
+  border: var(--dk-gry) 4px solid;
+  box-shadow: -10px -10px 0 0 var(--dk-gry);
   margin: 20px auto;
 }
 
@@ -165,17 +170,17 @@ h5 {
 .linkItem:hover a {
   text-decoration: none;
   /* font-weight: bold; */
-  color: rgb(49, 46, 46);
+  color: var(--dk-gry);
 }
 
 .linkItem:hover {
-  background-color: rgb(75, 205, 155);
-  /* border-color: rgb(249, 249, 243); */
+  background-color: var(--green);
+  /* border-color: var(--beige); */
   /* boxes groww when hovered */
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  box-shadow: 0 0 0 0 rgb(49, 46, 46);
+  box-shadow: 0 0 0 0 var(--dk-gry);
 }
 
 .footer {
@@ -183,7 +188,7 @@ h5 {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: rgb(49, 46, 46);
+  color: var(--dk-gry);
   text-align: right;
   padding: 5%;
   font-weight: bold;
@@ -242,8 +247,8 @@ h5 {
   .blurb {
     margin-top: 5%;
     text-decoration: none;
-    background-color: rgb(49, 46, 46);
-    color: rgb(249, 249, 243);
+    background-color: var(--dk-gry);
+    color: var(--beige);
     padding: 8%;
     text-align: center;
   }
@@ -252,7 +257,7 @@ h5 {
     background: rgba(49, 46, 46, 0);
   }
   .navbar-dark > .navbar-collapse {
-    background: rgb(246, 181, 182);
+    background: var(--pink);
     text-align: center;
     /* transition: background 500ms; */
   }
