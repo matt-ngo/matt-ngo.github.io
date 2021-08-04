@@ -13,6 +13,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: lowercase;
   font-size: 18px;
+  margin-bottom: 10%;
 }
 
 .mobile {
@@ -184,11 +185,11 @@ h5 {
 }
 
 /* centering for 2nd linktree */
-.tree2 .linkItem{
+.tree2 .linkItem {
   margin-right: 3%;
 }
 
-.treeTitle2{
+.treeTitle2 {
   padding-bottom: 3%;
   margin-left: 3%;
 }
@@ -338,3 +339,8 @@ h5 {
     transition: background 1s ease-in-out;
   }
 }
+
+/**
+ * Custom Cursors
+ * https://support.cargo.site/Create-a-Custom-Cursor
+ */
