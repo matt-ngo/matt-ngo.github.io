@@ -4,11 +4,12 @@
   --green: rgb(75, 205, 155);
   --pink: rgb(246, 181, 182);
   --halftone: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==');
+  --highlight: rgb(255, 255, 117);
 }
 
 body {
   background: var(--beige);
-  /* background-image: url(../img/noise-bg-inverse.png); */
+  /* background-image: url(../img/noise-inverse.png); */
   color: var(--dk-gry);
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
@@ -24,9 +25,9 @@ p {
 }
 
 .dot {
-  background-color: var(--green);
-  height: 20px;
-  width: 20px;
+  /* background-color: var(--green); */
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
 }
 
@@ -39,11 +40,16 @@ p {
 }
 
 /* ========== NAVBAR ========== */
-.navbar-toggler-icon {
-  /* background-image: url(../img/mylogo.png) !important; */
-  /* margin: 25px; */
-  /* padding: 35px !important; */
+.navbar-brand {
+  font-family: 'Gluten', sans-serif;
+  font-size: 40px;
 }
+/* .navbar-toggler-icon { */
+/* background-image: url(../img/mylogo.png) !important; */
+/* margin: 25px; */
+/* padding: 35px !important; */
+/* } */
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -64,6 +70,7 @@ p {
   text-decoration: line-through;
   text-decoration-thickness: 20%;
   opacity: 90%;
+  cursor: not-allowed;
 }
 
 .nav-link.active:hover {
@@ -97,7 +104,7 @@ p {
 }
 
 .boniver {
-  max-width: 200px
+  max-width: 200px;
 }
 
 .header {
@@ -112,7 +119,7 @@ p {
 
 .name-display {
   /* font-family: 'DM Serif Display', serif; */
-  font-family: 'Gluten', cursive;
+  font-family: 'Gluten', sans-serif;
   font-size: 6rem;
   margin-left: 5%;
   color: var(--dk-gry);
@@ -121,7 +128,7 @@ p {
 .name-caption {
   margin-left: 5%;
   color: var(--dk-gry);
-  background-color: rgb(255, 255, 117);
+  background-color: var(--highlight);
   width: fit-content;
 }
 
@@ -151,7 +158,6 @@ h5 {
   margin: auto;
   margin-top: 10%;
   margin-bottom: 10%;
-  /* width: 80%; */
   padding: 0 10px;
 }
 
@@ -166,6 +172,7 @@ h5 {
   text-decoration: none;
   transition: all 0.25s ease-in-out;
   border: var(--dk-gry) 4px solid;
+  border-radius: 5px;
   box-shadow: -10px -10px 0 0 var(--dk-gry);
   margin: 20px 30px;
 }
@@ -180,6 +187,7 @@ h5 {
   text-decoration: none;
   /* font-weight: bold; */
   color: var(--dk-gry);
+  background-color: var(--highlight);
 }
 
 .linkItem:hover {
@@ -197,20 +205,22 @@ h5 {
   text-decoration: none;
   box-shadow: -10px -10px 0 0 var(--dk-gry);
   margin: 60px 50px;
+  border-radius: 5px;
 }
 
 .spotify {
   border: var(--dk-gry) 4px solid;
+  border-radius: 5px;
 }
 
 /* ========== CUSTOM SELECT COLOR ========== */
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: var(--green);
+  background-color: var(--highlight);
 }
 
 ::selection {
-  background-color: var(--green);
+  background-color: var(--highlight);
 }
 
 /* ========== MISC STYLE TWEAKS ========== */
@@ -228,25 +238,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: var(--dk-gry);
-  text-align: right;
-  padding: 5%;
-  font-weight: bold;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-}
-
 /* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
@@ -258,7 +249,7 @@ a:hover {
     margin: auto;
   }
 
-  .col{
+  .col {
     border-left: none;
     border-right: none;
   }
@@ -273,9 +264,103 @@ a:hover {
     background: rgba(49, 46, 46, 0.842);
     transition: background 1s ease-in-out;
   }
+
+  .col-left {
+    padding-bottom: 0;
+  }
 }
 
-/**
- * Custom Cursors
- * https://support.cargo.site/Create-a-Custom-Cursor
- */
+.rainbow {
+  -webkit-animation: colorchange 20s infinite alternate;
+  animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background-color: blue;
+  }
+
+  10% {
+    background-color: #8e44ad;
+  }
+
+  20% {
+    background-color: #1abc9c;
+  }
+
+  30% {
+    background-color: #d35400;
+  }
+
+  40% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: #34495e;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  70% {
+    background-color: #2980b9;
+  }
+  80% {
+    background-color: #f1c40f;
+  }
+
+  90% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    background-color: pink;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: blue;
+  }
+
+  10% {
+    background-color: #8e44ad;
+  }
+
+  20% {
+    background-color: #1abc9c;
+  }
+
+  30% {
+    background-color: #d35400;
+  }
+
+  40% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: #34495e;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  70% {
+    background-color: #2980b9;
+  }
+  80% {
+    background-color: #f1c40f;
+  }
+
+  90% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    background-color: pink;
+  }
+}
