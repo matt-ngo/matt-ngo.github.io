@@ -18,10 +18,14 @@
 
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Bootstrap 5 CDN -->
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -43,167 +47,120 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container">
-        <nav id="mainNavbar" class="navbar navbar-dark py-0 px-2 fixed-top">
-            <!-- navbar-expand-md -->
-            <!-- define collapse behavior -->
-            <!-- make data-target the list of links of class collapse -->
-            <!-- button before brand makes toggler collapse into right side -->
-            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navLinks"
-                aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon .navbar-dark"></span>
-            </button>
-            <!-- BRAND -->
-            <!-- <a class="navbar-brand mb-0 h1 pl-2 py-2" href="#">
-                <img src="img/mylogo.png" width="50" height="50" alt="" loading="lazy"> -->
-            <!-- Matt Ngo. -->
+    <nav id="mainNavbar" class="navbar navbar-light brdr navbar-expand-md py-0 px-2">
+        <!-- navbar-expand-md -->
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navLinks"
+            aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon .navbar-light"></span>
+        </button>
+        <!-- BRAND -->
+        <a class="navbar-brand mb-0 h1 pl-2 py-2" href="#">
+            <div class="dot"></div>
+        </a>
 
-            <!-- Navbar Links -->
-            <!--
-                eventually have a work/about/contact
-                when you learn how to link to other pages
-             -->
-            <div class="collapse navbar-collapse" id="navLinks">
-                <ul class="navbar-nav mb-1 mb-lg-0 py-2">
-                    <li class="nav-item ml-auto">
-                        <a href="" class="nav-link active"> HOME</a>
-                        <!-- </li>
-                    <li class="nav-item inactive">
-                        <a href="https://github.com/matt-ngo" class="nav-link active"> ABOUT</a>
-                    </li>
-                    <li class="nav-item inactive">
-                        <a href="https://www.behance.net/MattNgo" class="nav-link active">
-                            PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item inactive">
-                        <a href="MattNgoResume.pdf" class="nav-link active"> CONTACT</a>
-                    </li> -->
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav mb-1 mb-lg-0 py-2">
+                <li class="nav-item active">
+                    <a href="" class="nav-link active"> HOME</a>
+                </li>
+                <li class="nav-item inactive">
+                    <a href="" class="nav-link inactive">PROJECT_A</a>
+                </li>
+                <li class="nav-item inactive">
+                    <a href="" class="nav-link inactive">PROJECT_B</a>
+                </li>
 
-    <!-- Jumbotron-esque title bar -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Title bar -->
     <section class="container-fluid px-0">
-        <div id="jtron" class="row align-items-center content section1">
+        <div class="row header brdr">
             <!-- vis on  md > -->
-            <div id="headingGroup headingLarge"
-                class="text-left text-white d-none d-md-block py-4 pl-5">
-                <h1 class="display-1">Matt Ngo</h1>
-                <h5 class="lead">Programmer, Designer.</p>
+            <div class="header-text text-left d-none d-md-block py-4 pl-5">
+                <h1 class="name-display">Matt Ngo</h1>
+                <h5 class="name-caption">Programmer, Designer.</p>
             </div>
             <!-- vis on sm < -->
-            <div id="headingGroup headingSmall"
-                class="text-center text-white d-block d-md-none py-3">
-                <h1 class="display-1">Matt Ngo</h1>
-                <h5 class="lead">Programmer, Designer.</p>
+            <div class="header-text text-center text-white d-block d-md-none py-3">
+                <h1 class="name-display">Matt Ngo</h1>
+                <h5 class="name-caption">Programmer, Designer.</p>
             </div>
         </div>
     </section>
 
+
+
     <div class="desktop">
-        <p class="blurb d-none d-sm-block"> Recent graduate from UC Santa Cruz with a BS in Computer Science<br>
-            Currently seeking full-time position in front-end / full-stack engineering.</p>
+        <div class="row main-content">
+            <div class="col col-left col-12 col-md-6">
+                <div class="col-inner">
+                    <!-- Linktree 1 -->
+                    <div class="linkTree tree1">
+                        <h5 class="treeTitle">Visit me on: </h5>
 
-        <div class="row">
-            <!-- Linktree 1 -->
-            <div class="col-6">
-                <div class="linkTree tree1">
-                    <h5 class="treeTitle">Visit me on: </h5>
-
-                    <div class="linkItem">
-                        <a href="https://www.linkedin.com/in/matthew-ngo-01a298160/">LinkedIn</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="https://github.com/matt-ngo">GitHub</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="https://www.behance.net/MattNgo">Behance</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="MattNgoResume.pdf">My Resume</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 plantgroup1">
-                <img class="plant1" src="img/plants1.png" alt="">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-6 plantgroup2">
-                <img class="plant2" src="img/plants2.png" alt="">
-            </div>
-
-            <div class="col-6">
-                <div class="linkTree tree2">
-                    <h5 class="treeTitle2">Mini Web Projects: </h5>
-                    <div class="linkItem">
-                        <a href="content/colorGame.html">RGB Guessing Game</a>
+                        <div class="linkItem">
+                            <a
+                                href="https://www.linkedin.com/in/matthew-ngo-01a298160/">LinkedIn</a>
+                        </div>
+                        <div class="linkItem">
+                            <a href="https://github.com/matt-ngo">GitHub</a>
+                        </div>
+                        <div class="linkItem">
+                            <a href="https://www.behance.net/MattNgo">Behance</a>
+                        </div>
+                        <div class="linkItem">
+                            <a href="MattNgoResume.pdf">My Resume</a>
+                        </div>
                     </div>
 
-                    <div class="linkItem">
-                        <a href="content/todo.html">Minimal To-Do List</a>
+                    <!-- boniver art -->
+                    <div >
+                        <img src="img/29.png" alt="" class="spacer-img boniver">
                     </div>
-                    <div class="linkItem">
-                        <a href="https://main.d3o58cp34yf61n.amplifyapp.com/">SPLITR: A bill splitting app</a>
+
+                    <!-- Linktree 1 -->
+                    <div class="linkTree tree2">
+                        <h5 class="treeTitle">Mini Web Projects: </h5>
+                        <div class="linkItem">
+                            <a href="content/colorGame.html">RGB Guessing Game</a>
+                        </div>
+
+                        <div class="linkItem">
+                            <a href="content/todo.html">Minimal To-Do List</a>
+                        </div>
+                        <div class="linkItem">
+                            <a href="https://main.d3o58cp34yf61n.amplifyapp.com/">SPLITR: A bill
+                                splitting app</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col col-right col-12 col-md-6">
+                <div class="col-inner">
+                    <div class=" plantgroup2">
+                        <img class="plant2 spacer-img" src="img/plants2.png" alt="">
+                    </div>
 
+                    <div class="spotify-container">
+                        <iframe src="https://open.spotify.com/embed/playlist/1jlAkNKmi4FVxi59sGNAYn"
+                            width="100%" height="380" frameBorder="0" allowfullscreen=""
+                            class="spotify"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                    </div>
+
+                    <div class="plantgroup1">
+                        <img class="plant1 spacer-img" src="img/plants1.png" alt="">
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </div>
-
-    <div class="mobile">
-        <div class="row">
-            <div class="col-12">
-                <!-- Linktree 1 -->
-                <div class="linkTree">
-                    <h5 class="treeTitle">Visit me on: </h5>
-
-                    <div class="linkItem">
-                        <a href="https://www.linkedin.com/in/matthew-ngo-01a298160/">LinkedIn</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="https://github.com/matt-ngo">GitHub</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="https://www.behance.net/MattNgo">Behance</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="MatthewNgo_Resume.pdf">My Resume</a>
-                    </div>
-                </div>
-
-                <div class="linkTree">
-                    <h5>Mini Web Projects: </h5>
-                    <div class="linkItem">
-                        <a href="content/colorGame.html">RGB Guessing Game</a>
-                    </div>
-
-                    <div class="linkItem">
-                        <a href="content/todo.html">Minimal To-Do List</a>
-                    </div>
-                    <div class="linkItem">
-                        <a href="https://main.d3o58cp34yf61n.amplifyapp.com/">SPLITR: A bill splitting app</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col d-block d-sm-none">
-                <p class="blurb">Computer Science Major at UC Santa Cruz.<br> <br>
-                    Currently seeking internships/entry level positions in software engineering</p>
-            </div>
-        </div>
-
-        <div class="col d-block d-sm-none">
-            <img class="plantcenter" src="img/plants1.png" alt="">
-        </div>
-    </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
