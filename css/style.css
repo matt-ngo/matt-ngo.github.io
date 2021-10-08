@@ -9,47 +9,34 @@
 
 body {
   background: var(--beige);
-  /* background-image: url(../img/noise-inverse.png); */
   color: var(--dk-gry);
   font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
 }
 
 p {
   line-height: 1.5em;
 }
 
-.mobile {
-  display: none;
-  margin: 60px;
-}
-
 .dot {
-  /* background-color: var(--green); */
-  height: 25px;
-  width: 25px;
+  height: 1.5rem;
+  width: 1.5rem;
+
   border-radius: 50%;
 }
 
 .brdr {
-  border-bottom: 2px solid black;
-}
-
-.col {
-  padding-bottom: 50px;
+  border-bottom: 0.2em solid black;
 }
 
 /* ========== NAVBAR ========== */
-.navbar-brand {
-  font-family: 'Gluten', sans-serif;
-  font-size: 40px;
-}
+/* curreently unused */
 /* .navbar-toggler-icon { */
 /* background-image: url(../img/mylogo.png) !important; */
 /* margin: 25px; */
 /* padding: 35px !important; */
 /* } */
 
+/* currently unused */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -58,17 +45,17 @@ p {
 }
 
 .nav-link {
-  font-size: 80%;
+  font-size: 0.9em;
 }
 
 .nav-link.active {
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-thickness: 20%;
+  text-decoration-thickness: 0.2em;
 }
 .nav-link.inactive {
   text-decoration: line-through;
-  text-decoration-thickness: 20%;
+  text-decoration-thickness: 0.2em;
   opacity: 90%;
   cursor: not-allowed;
 }
@@ -79,75 +66,61 @@ p {
 
 /* ========== MAIN BODY ========== */
 .main-content {
-  margin: 0;
-}
-.col-left {
-  border-right: 2px solid black;
+  margin: 0em;
 }
 
-.col-inner {
-  margin-top: 10%;
+.col {
+  padding-bottom: 5em;
+  padding-top: 2em;
+}
+
+.col-left {
+  border-right: 0.2em solid black;
 }
 
 .spacer-img {
   margin: auto;
   display: block;
-  width: 60%;
 }
 
 .plant1 {
-  max-width: 500px;
+  max-width: 30em;
 }
 
 .plant2 {
-  max-width: 400px;
+  max-width: 25em;
 }
 
 .boniver {
-  max-width: 200px;
+  max-width: 20em;
 }
 
 .header {
   background: var(--halftone);
   text-transform: lowercase;
-  padding-top: 8%;
-  color: white;
-  padding-bottom: 2%;
-  width: 100%;
-  margin: 0;
+  padding-top: 10em;
+  padding-bottom: 1em;
+  margin: 0em;
 }
 
 .name-display {
-  /* font-family: 'DM Serif Display', serif; */
   font-family: 'Gluten', sans-serif;
-  font-size: 6rem;
-  margin-left: 5%;
+  font-size: 6em;
+  margin-left: 4rem;
   color: var(--dk-gry);
 }
 
 .name-caption {
-  margin-left: 5%;
+  margin-left: 4rem;
   color: var(--dk-gry);
   background-color: var(--highlight);
   width: fit-content;
-}
-
-.blurb {
-  text-transform: none;
-  text-align: left;
   font-weight: bold;
-  max-width: 100%;
-  display: block;
-  margin: auto 25px;
-  text-decoration: none;
-  color: var(--dk-gry);
-  border: var(--dk-gry) 4px solid;
-  padding: 2%;
 }
 
 h5 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* ===== LINKTREE ===== */
@@ -156,36 +129,32 @@ h5 {
   text-align: center;
   text-transform: lowercase;
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  padding: 0 10px;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .treeTitle {
-  padding-bottom: 3%;
-  width: 100%;
+  padding-bottom: 1em;
 }
 
 .linkItem {
   display: block;
-  padding: 15px 25px;
+  padding: 1em;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  border: var(--dk-gry) 4px solid;
-  border-radius: 5px;
-  box-shadow: -10px -10px 0 0 var(--dk-gry);
-  margin: 20px 30px;
+  border: var(--dk-gry) 0.3em solid;
+  border-radius: 0.5em;
+  box-shadow: -0.6em -0.6em 0 0 var(--dk-gry);
+  margin: 1.25em 4em;
 }
 
 .linkItem a {
-  /* link takes up the whole chonk */
   display: block;
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 .linkItem:hover a {
   text-decoration: none;
-  /* font-weight: bold; */
   color: var(--dk-gry);
   background-color: var(--highlight);
 }
@@ -203,14 +172,14 @@ h5 {
   display: block;
   height: fit-content;
   text-decoration: none;
-  box-shadow: -10px -10px 0 0 var(--dk-gry);
-  margin: 60px 50px;
-  border-radius: 5px;
+  box-shadow: -0.6em -0.6em 0 0 var(--dk-gry);
+  margin: 3em 4em;
+  border-radius: 0.5em;
 }
 
 .spotify {
   border: var(--dk-gry) 4px solid;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 /* ========== CUSTOM SELECT COLOR ========== */
@@ -245,6 +214,10 @@ a:hover {
     display: none;
   }
 
+  .name-display{
+    margin: auto;
+  }
+
   .name-caption {
     margin: auto;
   }
@@ -255,9 +228,9 @@ a:hover {
   }
 
   .linkItem {
-    padding: 10px 25px;
-    margin: 20px auto;
-    max-width: 500px;
+    padding: .75em;
+    margin: 1.25em auto;
+    max-width: 35em;
   }
 
   .navbar.scrolled {
