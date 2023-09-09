@@ -168,18 +168,30 @@ h5 {
   box-shadow: 0 0 0 0 var(--dk-gry);
 }
 
+.disabled:hover a{
+  text-decoration: line-through;
+  background-color: #ed6b61;
+}
+
 .spotify-container {
   display: block;
   height: fit-content;
   text-decoration: none;
   box-shadow: -0.6em -0.6em 0 0 var(--dk-gry);
+  background-color: var(--dk-gry);
   margin: 3em 4em;
   border-radius: 0.5em;
 }
 
 .spotify {
+  /*
   border: var(--dk-gry) 4px solid;
   border-radius: 0.5em;
+  */
+}
+
+.note {
+  margin: 1em 4em;
 }
 
 /* ========== CUSTOM SELECT COLOR ========== */
